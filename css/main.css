@@ -375,16 +375,16 @@ a:hover {
 .state__text {
     font-style: normal;
     font-weight: bold;
-    font-size: 24px;
-    line-height: 39px;
+    font-size: 18px;
+    line-height: 29px;
     color: var(--color-white);
     display: inline-block;
 }
 
 @media (max-width: 768px) {
     .state__text {
-        font-size: 20px;
-        line-height: 35px;
+        font-size: 16px;
+        line-height: 24px;
     }
 }
 
