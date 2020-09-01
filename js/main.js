@@ -43,3 +43,9 @@ $(document).ready(() => {
   expandableBlock('.shop-gifts__more', 'shop-gifts__text');
   expandableBlock('.answer__item-more', 'answer__item-text', 125);
 });
+
+
+$("body").on('click', '[href*="#"]', function(e){
+  $('html,body').stop().animate({ scrollTop: $(this.hash).offset().top }, 1000);
+  e.preventDefault();
+});
