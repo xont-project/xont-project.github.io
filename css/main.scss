@@ -150,6 +150,17 @@ a {
         font-size: 18px;
         line-height: 29px;
         color: var(--color-white);
+        height: 63px;
+        display: inline-block;
+        overflow: hidden;
+        position: relative;
+        transition: height 0.5s;
+    }
+    &__more {
+        @extend .shop-gifts__text;
+        height: auto;
+        margin-left: 50%;
+        transform: translateX(-50%);
     }
 }
 
@@ -194,6 +205,13 @@ a {
             padding-left: 20px;
             padding-bottom: 16px;
             color: var(--color-default);
+            height: 125px;
+            overflow: hidden;
+            transition: height 0.5s;
+        }
+        &-more {
+            @extend .answer__item-text;
+            height: auto;
         }
     }
 }
@@ -535,6 +553,11 @@ a {
     }
     &-content {
         border: 0;
+        @media (max-width: 768px) {
+            height: 100%;
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
     }
     &__logo {
         display: flex;
@@ -554,7 +577,8 @@ a {
         }
         @media (max-width: 768px) {
             max-height: 100%;
-            height: auto;
+            padding: 36px 20px 63px;
+            height: 100%;
             margin: auto;
         }
     }
@@ -624,6 +648,7 @@ a {
         padding: 14px 99px;
         background: var(--color-button);
         border-radius: 25px;
+        position: relative;
         @media (max-width: 768px) {
             white-space: nowrap;
         }
